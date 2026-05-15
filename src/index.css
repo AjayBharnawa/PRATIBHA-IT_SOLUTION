@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+*{
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
+}
+
+@theme {
+  --color-primary: #3cb7a1 ;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
