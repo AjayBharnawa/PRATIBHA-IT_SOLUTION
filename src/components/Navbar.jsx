@@ -1,22 +1,54 @@
-import React from 'react'
-import logo from '../assets/logo.png'
-
+import React, { useEffect, useState } from 'react'
 
 const Navbar = () => {
+
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+
+    const handleScroll = () => {
+
+      if (window.scrollY > 50) {
+        setScrolled(true)
+      } else {
+        setScrolled(false)
+      }
+
+    }
+
+    window.addEventListener('scroll', handleScroll)
+
+    return () => window.removeEventListener('scroll', handleScroll)
+
+  }, [])
+
   return (
-    <div className=' border-b border-gray-300 flex items-center px-4 sm:px-12 lg:px-24 xl:px-40 py-4 fixed top-0 left-0 w-full z-20 backdrop-blur-xl font-medium bg-white/50 dark:bg-gray-900/70'>
 
-      <img src={logo} alt="Logo" className="w-15" />
-      <h1 className="text-2xl  sm:text-1xl font-black py-3 px-5 tracking-[-1px]">
-  <span className="text-zinc-800">Pratibha</span>
-  <span className="text-blue-900">IT</span>
-    <span className="text-zinc-900">Solution </span>
+    <nav
+      className={`fixed z-50 transition-all duration-500 left-1/2 -translate-x-1/2
 
-</h1>
+      ${
+        scrolled
+          ? 'top-5 w-[85%] rounded-2xl bg-white/80 backdrop-blur-xl shadow-2xl py-4'
+          : 'top-0 w-full bg-white py-5'
+      }
 
-    
+      `}
+    >
 
-      <div className='flex-1 flex justify-center items-center text-gray-700 sm:text-sm gap-5'>
+      <div className="flex items-center justify-between px-4 sm:px-12 lg:px-24 xl:px-40">
+
+        <div className="flex items-center gap-3">
+
+          <h1 className="text-2xl font-black tracking-tight">
+            <span className="text-black">Pratibha</span>
+            <span className="text-blue-800">IT</span>
+            <span className="text-black">Solution</span>
+          </h1>
+
+        </div>
+
+        <div className='flex-1 flex justify-center items-center text-gray-700 sm:text-sm gap-5'>
         <a href="#" className='sm:hover:border-b hover:text-blue-900'>Home</a>
         <a href="#About" className='sm:hover:border-b hover:text-blue-900'>About</a>
         <a href="#Services" className='sm:hover:border-b hover:text-blue-900'>Services</a>
@@ -25,7 +57,9 @@ const Navbar = () => {
         <button className="bg-blue-800 text-white px-5 py-2 rounded-full hover:scale-105 hover:bg-blue-900 transition-all duration-100">
   Contact Us
         </button>
-    </div>
+      </div>
+
+    </nav>
   )
 }
 

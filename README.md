@@ -19,3 +19,14 @@ If you are developing a production application, we recommend using TypeScript wi
 # PRATIBHA-IT_SOLUTION
 A web application using MERN stack 
 >>>>>>> 0282117260d558d52fa2cb79c18977643315930f
+
+
+Framer Motion animations
+Dark mode
+Scroll reveal animations
+Real contact form
+Backend integration
+Smooth scrolling
+Loading screen
+Cursor glow effect
+GSAP animations

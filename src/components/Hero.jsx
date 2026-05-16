@@ -78,11 +78,11 @@ const Hero = () => {
       Empowering
     </h2>
 
-    <h2 className="text-3xl sm:text-4xl font-black text-black leading-tight">
+    <h2 className="text-3xl sm:text-4xl font-black text-blue-800 leading-tight">
       Education Through
     </h2>
 
-    <h2 className="text-3xl sm:text-4xl font-black text-blue-900 leading-tight">
+    <h2 className="text-3xl sm:text-4xl font-black text-black leading-tight">
       Technology
     </h2>
 
