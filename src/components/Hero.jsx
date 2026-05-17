@@ -5,10 +5,7 @@ import groupp from '../assets/groupp.jpeg'
 const Hero = () => {
   return (
 
-    <div className="px-4 sm:px-12 lg:px-24 xl:px-40 py-8 ">
-
-      
-        
+     <div className="px-4 sm:px-12 lg:px-24 xl:px-40 pt-0 pb-8 -mt-10">        
       <div className="flex justify-center my-1">
       <div className='inline-flex items-center gap-2 border border-gray-300 p-1.5 pr-4 rounded-full'>
         <img className='w-20 object-cover rounded-3xl' src={groupp} alt="Groupp" />

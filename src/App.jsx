@@ -1,41 +1,78 @@
 import React from 'react'
 
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from 'react-router-dom'
+
 import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import About from './components/About'
-import Services from './components/Services'
-import WhyUs from './components/WhyUs'
-import Process from './components/Process'
-import ContactSection from './components/ContactSection'
 import Footer from './components/Footer'
+
+import Home from './components/Home'
+import AboutPage from './components/AboutPage'
+import ServicesPage from './components/ServicesPage'
+import WhyUsPage from './components/WhyUsPage'
+import ContactPage from './components/ContactPage'
+import ScrollToTop from './components/ScrollToTop'
 
 const App = () => {
 
   return (
 
-    <div className='relative'>
+    <BrowserRouter>
 
-      <Navbar />
+      <ScrollToTop />
 
-      <main className="pt-20">
 
-        <Hero />
+      <div className="relative overflow-x-hidden bg-white">
 
-        <About />
+        <Navbar />
 
-        <Services />
+        <main className="pt-20 min-h-screen">
 
-        <WhyUs />
+          <Routes>
 
-        <Process />
+            {/* HOME */}
+            <Route
+              path="/"
+              element={<Home />}
+            />
 
-        <ContactSection />
-        
+            {/* ABOUT */}
+            <Route
+              path="/about"
+              element={<AboutPage />}
+            />
+
+            {/* SERVICES */}
+            <Route
+              path="/services"
+              element={<ServicesPage />}
+            />
+
+            {/* WHY US */}
+            <Route
+              path="/whyus"
+              element={<WhyUsPage />}
+            />
+
+            {/* CONTACT */}
+            <Route
+              path="/contact"
+              element={<ContactPage />}
+            />
+
+          </Routes>
+
+        </main>
+
         <Footer />
 
-      </main>
+      </div>
 
-    </div>
+    </BrowserRouter>
+
   )
 }
 
