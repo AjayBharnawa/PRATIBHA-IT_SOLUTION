@@ -1,46 +1,84 @@
 import React from 'react'
 
+import { Link } from 'react-router-dom'
+
+import {
+  FaArrowRight,
+  FaPhoneAlt
+} from 'react-icons/fa'
+
 const ContactSection = () => {
   return (
 
-    <div className="px-4 sm:px-12 lg:px-24 xl:px-40 py-24 bg-white">
+    <div className="px-4 sm:px-12 lg:px-24 xl:px-40 py-24 bg-white overflow-hidden">
 
-      <div className="relative overflow-hidden rounded-[40px] bg-gradient-to-r from-blue-900 via-blue-800 to-cyan-700 px-8 sm:px-16 py-16 shadow-2xl">
+      <div className="relative overflow-hidden rounded-[40px] bg-gradient-to-r from-blue-900 via-blue-800 to-cyan-700 px-8 sm:px-16 py-16 shadow-2xl group">
 
         {/* Glow Effects */}
-        <div className="absolute -top-20 -left-20 w-72 h-72 bg-cyan-400/20 rounded-full blur-3xl"></div>
+        <div className="absolute -top-20 -left-20 w-72 h-72 bg-cyan-400/20 rounded-full blur-3xl animate-pulse"></div>
 
-        <div className="absolute -bottom-20 -right-20 w-72 h-72 bg-blue-300/20 rounded-full blur-3xl"></div>
+        <div className="absolute -bottom-20 -right-20 w-72 h-72 bg-blue-300/20 rounded-full blur-3xl animate-pulse"></div>
+
+        {/* Animated Border */}
+        <div className="animated-border text-white"></div>
 
         {/* Content */}
         <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-10">
 
           {/* Left Content */}
-          <div className="text-center lg:text-left">
+          <div className="text-center lg:text-left animate-fadeIn">
 
-            <h1 className="text-4xl sm:text-5xl font-black text-white leading-tight">
+            <p className="text-cyan-200 font-semibold tracking-widest uppercase">
+              Contact Us
+            </p>
+
+            <h1 className="mt-4 text-4xl sm:text-5xl font-black text-white leading-tight">
+
               Ready to Digitize
               <br />
               Your Institution?
+
             </h1>
 
-            <p className="mt-5 text-lg text-blue-100 leading-relaxed max-w-2xl">
-              Let us help you simplify operations &
-              enhance learning experience.
+            <p className="mt-6 text-lg text-blue-100 leading-relaxed max-w-2xl">
+
+              Let us help you simplify operations,
+              automate workflows, and enhance
+              the learning experience with modern
+              educational technology solutions.
+
             </p>
+
+            {/* Contact Info */}
+            <div className="mt-8 flex items-center justify-center lg:justify-start gap-3 text-white text-lg font-semibold">
+
+              <FaPhoneAlt className="text-cyan-300" />
+
+              +91 7684839593
+
+            </div>
 
           </div>
 
-          {/* Button */}
-          <button className="group bg-white text-blue-900 px-8 py-4 rounded-full font-bold text-lg transition-all duration-500 hover:scale-105 hover:bg-blue-100 shadow-xl flex items-center gap-3">
+          {/* Right Buttons */}
+          <div className="flex flex-col sm:flex-row gap-5">
 
-            Contact Pratibha IT Solution
+            {/* Contact Button */}
+            <Link to="/contact">
 
-            <span className="transition-all duration-500 group-hover:translate-x-1">
-              →
-            </span>
+              <button className="group bg-white text-blue-900 px-8 py-4 rounded-full font-bold text-lg transition-all duration-500 hover:scale-105 hover:bg-blue-100 shadow-xl flex items-center gap-3">
 
-          </button>
+                Contact Us
+
+                <FaArrowRight className="transition-all duration-500 group-hover:translate-x-1" />
+
+              </button>
+
+            </Link>
+
+            
+
+          </div>
 
         </div>
 

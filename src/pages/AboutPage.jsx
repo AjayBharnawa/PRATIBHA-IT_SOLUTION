@@ -5,12 +5,10 @@ import {
   FaBullseye,
   FaCheckCircle,
   FaBuilding,
-  FaUsers,
-  FaShieldAlt,
-  FaLaptopCode
+  FaUsers
 } from 'react-icons/fa'
 
-import aboutImage from '../assets/about.jpg'
+import aboutImage from '../assets/images/about.jpg'
 
 const AboutPage = () => {
   return (
@@ -59,8 +57,10 @@ const AboutPage = () => {
           <div>
 
             <h2 className="text-4xl font-black text-black">
+
               What
               <span className="text-blue-700"> We Do</span>
+
             </h2>
 
             <div className="w-24 h-1 bg-blue-700 rounded-full mt-4"></div>
@@ -128,12 +128,16 @@ const AboutPage = () => {
           <div className="group bg-white border border-gray-200 rounded-[35px] p-10 shadow-xl hover:shadow-2xl hover:-translate-y-3 hover:scale-[1.02] transition-all duration-700 ease-out">
 
             <div className="w-16 h-16 rounded-2xl bg-blue-100 flex items-center justify-center text-3xl text-blue-700 group-hover:rotate-6 transition-all duration-500">
+
               <FaBuilding />
+
             </div>
 
             <h2 className="mt-8 text-4xl font-black text-black">
+
               About
               <span className="text-blue-700"> Us</span>
+
             </h2>
 
             <p className="mt-6 text-gray-600 text-lg leading-relaxed">
@@ -154,34 +158,50 @@ const AboutPage = () => {
           <div className="group bg-white border border-gray-200 rounded-[35px] p-10 shadow-xl hover:shadow-2xl hover:-translate-y-3 hover:scale-[1.02] transition-all duration-700 ease-out">
 
             <div className="w-16 h-16 rounded-2xl bg-blue-100 flex items-center justify-center text-3xl text-blue-700 group-hover:scale-110 transition-all duration-500">
+
               <FaUsers />
+
             </div>
 
             <h2 className="mt-8 text-4xl font-black text-black">
+
               Why Choose
               <span className="text-blue-700"> Us</span>
+
             </h2>
 
             <div className="mt-8 space-y-5 text-gray-700 text-lg">
 
               <div className="flex items-center gap-3">
+
                 <FaCheckCircle className="text-blue-700" />
+
                 <p>Experienced Professionals</p>
+
               </div>
 
               <div className="flex items-center gap-3">
+
                 <FaCheckCircle className="text-blue-700" />
+
                 <p>Client-Focused Approach</p>
+
               </div>
 
               <div className="flex items-center gap-3">
+
                 <FaCheckCircle className="text-blue-700" />
+
                 <p>Affordable Pricing</p>
+
               </div>
 
               <div className="flex items-center gap-3">
+
                 <FaCheckCircle className="text-blue-700" />
+
                 <p>End-to-End IT Services</p>
+
               </div>
 
             </div>
@@ -192,12 +212,16 @@ const AboutPage = () => {
           <div className="group bg-white border border-gray-200 rounded-[35px] p-10 shadow-xl hover:shadow-2xl hover:-translate-y-3 hover:scale-[1.02] transition-all duration-700 ease-out">
 
             <div className="w-16 h-16 rounded-2xl bg-blue-100 flex items-center justify-center text-3xl text-blue-700 group-hover:scale-110 transition-all duration-500">
+
               <FaRocket />
+
             </div>
 
             <h2 className="mt-8 text-4xl font-black text-black">
+
               Our
               <span className="text-blue-700"> Vision</span>
+
             </h2>
 
             <p className="mt-6 text-gray-600 text-lg leading-relaxed">
@@ -218,34 +242,50 @@ const AboutPage = () => {
           <div className="group bg-white border border-gray-200 rounded-[35px] p-10 shadow-xl hover:shadow-2xl hover:-translate-y-3 hover:scale-[1.02] transition-all duration-700 ease-out">
 
             <div className="w-16 h-16 rounded-2xl bg-blue-100 flex items-center justify-center text-3xl text-blue-700 group-hover:rotate-12 transition-all duration-500">
+
               <FaBullseye />
+
             </div>
 
             <h2 className="mt-8 text-4xl font-black text-black">
+
               Our
               <span className="text-blue-700"> Mission</span>
+
             </h2>
 
             <div className="mt-8 space-y-5 text-gray-700 text-lg">
 
               <div className="flex items-center gap-3">
+
                 <FaCheckCircle className="text-blue-700" />
+
                 <p>Simplify digital transformation for education</p>
+
               </div>
 
               <div className="flex items-center gap-3">
+
                 <FaCheckCircle className="text-blue-700" />
+
                 <p>Provide affordable & reliable IT solutions</p>
+
               </div>
 
               <div className="flex items-center gap-3">
+
                 <FaCheckCircle className="text-blue-700" />
+
                 <p>Automate academic & administrative processes</p>
+
               </div>
 
               <div className="flex items-center gap-3">
+
                 <FaCheckCircle className="text-blue-700" />
+
                 <p>Build long-term institutional partnerships</p>
+
               </div>
 
             </div>

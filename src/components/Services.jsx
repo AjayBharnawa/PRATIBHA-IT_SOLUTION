@@ -11,21 +11,26 @@ import {
 
 const Services = () => {
   return (
+
     <div className="px-4 sm:px-12 lg:px-24 xl:px-40 py-24 bg-white">
 
       {/* Heading */}
       <div className="text-center">
 
         <h1 className="text-4xl sm:text-5xl font-black text-black">
+
           Our
           <span className="text-blue-800"> Services</span>
+
         </h1>
 
         <div className="w-40 h-1 bg-blue-800 rounded-full mx-auto mt-3"></div>
 
         <p className="mt-6 text-lg text-gray-600 max-w-3xl mx-auto">
+
           Smart digital solutions designed specifically for modern
           educational institutions.
+
         </p>
 
       </div>
@@ -52,8 +57,10 @@ const Services = () => {
             </h2>
 
             <p className="mt-4 text-gray-600 leading-relaxed">
+
               Professional, mobile-friendly & SEO-optimized websites
               for schools, colleges & institutes.
+
             </p>
 
           </div>
@@ -78,8 +85,10 @@ const Services = () => {
             </h2>
 
             <p className="mt-4 text-gray-600 leading-relaxed">
+
               Manage enquiries, admissions, students, parents &
               communication from one dashboard.
+
             </p>
 
           </div>
@@ -104,8 +113,10 @@ const Services = () => {
             </h2>
 
             <p className="mt-4 text-gray-600 leading-relaxed">
+
               Automated fee tracking, attendance management &
               real-time reporting.
+
             </p>
 
           </div>
@@ -130,8 +141,10 @@ const Services = () => {
             </h2>
 
             <p className="mt-4 text-gray-600 leading-relaxed">
+
               Instant communication with parents & students
               through WhatsApp & SMS alerts.
+
             </p>
 
           </div>
@@ -156,8 +169,10 @@ const Services = () => {
             </h2>
 
             <p className="mt-4 text-gray-600 leading-relaxed">
+
               Secure online exams, auto result generation &
               performance analytics.
+
             </p>
 
           </div>
@@ -182,8 +197,10 @@ const Services = () => {
             </h2>
 
             <p className="mt-4 text-gray-600 leading-relaxed">
+
               Dedicated technical support, maintenance,
               updates & data security.
+
             </p>
 
           </div>

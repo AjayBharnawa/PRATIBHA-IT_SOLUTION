@@ -16,16 +16,20 @@ const WhyUs = () => {
       <div className="text-center">
 
         <h1 className="text-4xl sm:text-5xl font-black text-black">
+
           Why Choose
           <span className="text-blue-800"> Pratibha IT Solutions?</span>
+
         </h1>
 
         <div className="w-52 h-1 bg-blue-800 rounded-full mx-auto mt-3"></div>
 
         <p className="mt-6 text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
+
           We understand the unique challenges of educational institutions
           and deliver technology solutions that are practical,
           reliable, and future-ready.
+
         </p>
 
       </div>
@@ -52,9 +56,11 @@ const WhyUs = () => {
           </h2>
 
           <p className="relative z-10 mt-4 text-gray-600 leading-relaxed">
+
             We work exclusively with schools, colleges,
             and training institutes, ensuring every solution
             fits academic workflows and requirements.
+
           </p>
 
         </div>
@@ -78,8 +84,10 @@ const WhyUs = () => {
           </h2>
 
           <p className="relative z-10 mt-4 text-gray-600 leading-relaxed">
+
             Our pricing is designed keeping private institutions
             in mind, offering maximum value without compromising quality.
+
           </p>
 
         </div>
@@ -103,9 +111,11 @@ const WhyUs = () => {
           </h2>
 
           <p className="relative z-10 mt-4 text-gray-600 leading-relaxed">
+
             Simple, user-friendly software that requires
             no technical knowledge, making adoption easy
             for staff and administrators.
+
           </p>
 
         </div>
@@ -129,9 +139,11 @@ const WhyUs = () => {
           </h2>
 
           <p className="relative z-10 mt-4 text-gray-600 leading-relaxed">
+
             We follow ethical practices, ensure data security,
             and provide reliable long-term support
             for every institution.
+
           </p>
 
         </div>

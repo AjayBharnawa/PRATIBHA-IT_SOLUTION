@@ -6,7 +6,7 @@ import {
   FileText,
   Monitor,
   Smartphone,
-  Settings,
+ Settings,
   TrendingUp,
   ShieldCheck,
   Star,
@@ -28,8 +28,7 @@ const ServicesPage = () => {
         'Mobile Responsive Design',
         'SEO Friendly Structure',
         'Fast Loading & Secure'
-      ],
-      color: 'blue'
+      ]
     },
 
     {
@@ -40,8 +39,7 @@ const ServicesPage = () => {
         'Fees & Attendance Tracking',
         'Parent & Teacher Portal',
         'Reports & Analytics'
-      ],
-      color: 'cyan'
+      ]
     },
 
     {
@@ -52,8 +50,7 @@ const ServicesPage = () => {
         'Automatic Result Generation',
         'Student Performance Reports',
         'Secure Login Access'
-      ],
-      color: 'purple'
+      ]
     },
 
     {
@@ -64,8 +61,7 @@ const ServicesPage = () => {
         'Wireframes & Prototypes',
         'Conversion-Focused Layouts',
         'Interactive Experiences'
-      ],
-      color: 'green'
+      ]
     },
 
     {
@@ -76,8 +72,7 @@ const ServicesPage = () => {
         'Custom Business Solutions',
         'High Performance & Security',
         'User-Friendly Interfaces'
-      ],
-      color: 'pink'
+      ]
     },
 
     {
@@ -88,8 +83,7 @@ const ServicesPage = () => {
         'School & Admin Portals',
         'Dashboards & Analytics',
         'Custom Management Systems'
-      ],
-      color: 'orange'
+      ]
     },
 
     {
@@ -100,8 +94,7 @@ const ServicesPage = () => {
         'Social Media Management',
         'Brand Identity Design',
         'Online Growth Strategies'
-      ],
-      color: 'indigo'
+      ]
     },
 
     {
@@ -112,8 +105,7 @@ const ServicesPage = () => {
         'System Upgrades',
         'Long-Term IT Support',
         'Reliable & Secure Solutions'
-      ],
-      color: 'red'
+      ]
     }
   ]
 

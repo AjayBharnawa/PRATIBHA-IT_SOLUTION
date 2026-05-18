@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+*{
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
+}
+
+@theme {
+  --color-primary: #3cb7a1 ;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animated-border {
+  position: absolute;
+  inset: 0;
+
+  border-radius: 24px;
+  padding: 1.5px;
+
+  background: linear-gradient(
+    130deg,
+    transparent 0%,
+    transparent 35%,
+    currentColor 50%,
+    transparent 65%,
+    transparent 100%
+  );
+
+  background-size: 300% 300%;
+  background-position: 0% 50%;
+
+  opacity: 0;
+
+  transition: opacity 0.4s ease;
+
+  animation: borderFlow 8s linear infinite;
+
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+
+  pointer-events: none;
+}
+
+.group:hover .animated-border {
+  opacity: 1;
+}
+
+@keyframes borderFlow {
+
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 300% 50%;
+  }
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}

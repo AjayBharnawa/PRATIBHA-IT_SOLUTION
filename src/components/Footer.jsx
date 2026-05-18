@@ -1,15 +1,21 @@
 import React from 'react'
 
+import { Link } from 'react-router-dom'
+
 import {
   FaInstagram,
   FaFacebookF,
-  FaLinkedinIn
+  FaLinkedinIn,
+  FaEnvelope,
+  FaPhoneAlt,
+  FaMapMarkerAlt,
+  FaArrowRight
 } from 'react-icons/fa'
 
 const Footer = () => {
   return (
 
-    <footer className="bg-white border-t border-gray-200">
+    <footer className="bg-white border-t border-gray-200 overflow-hidden">
 
       {/* Main Footer */}
       <div className="px-4 sm:px-12 lg:px-24 xl:px-40 py-20">
@@ -20,15 +26,21 @@ const Footer = () => {
           <div>
 
             <h1 className="text-3xl font-black leading-tight text-black">
+
               Pratibha
               <span className="text-blue-800"> IT </span>
-              <span className='text-black'>Solutions</span>
+              <span className="text-black">
+                Solutions
+              </span>
+
             </h1>
 
             <p className="mt-6 text-gray-600 leading-relaxed">
+
               Empowering schools, colleges & institutes
               with smart websites, Education CRM,
               automation and reliable IT support.
+
             </p>
 
             {/* Social Icons */}
@@ -80,33 +92,78 @@ const Footer = () => {
             <ul className="mt-6 space-y-4 text-gray-600">
 
               <li>
-                <a href="#" className="hover:text-blue-700 transition-all duration-300">
+
+                <Link
+                  to="/"
+                  className="group flex items-center gap-2 hover:text-blue-700 transition-all duration-300"
+                >
+
+                  <FaArrowRight className="text-sm group-hover:translate-x-1 transition-all duration-300" />
+
                   Home
-                </a>
+
+                </Link>
+
               </li>
 
               <li>
-                <a href="#About" className="hover:text-blue-700 transition-all duration-300">
+
+                <Link
+                  to="/about"
+                  className="group flex items-center gap-2 hover:text-blue-700 transition-all duration-300"
+                >
+
+                  <FaArrowRight className="text-sm group-hover:translate-x-1 transition-all duration-300" />
+
                   About Us
-                </a>
+
+                </Link>
+
               </li>
 
               <li>
-                <a href="#Services" className="hover:text-blue-700 transition-all duration-300">
+
+                <Link
+                  to="/services"
+                  className="group flex items-center gap-2 hover:text-blue-700 transition-all duration-300"
+                >
+
+                  <FaArrowRight className="text-sm group-hover:translate-x-1 transition-all duration-300" />
+
                   Services
-                </a>
+
+                </Link>
+
               </li>
 
               <li>
-                <a href="#WhyUs" className="hover:text-blue-700 transition-all duration-300">
+
+                <Link
+                  to="/whyus"
+                  className="group flex items-center gap-2 hover:text-blue-700 transition-all duration-300"
+                >
+
+                  <FaArrowRight className="text-sm group-hover:translate-x-1 transition-all duration-300" />
+
                   Why Us
-                </a>
+
+                </Link>
+
               </li>
 
               <li>
-                <a href="#Contact" className="hover:text-blue-700 transition-all duration-300">
+
+                <Link
+                  to="/contact"
+                  className="group flex items-center gap-2 hover:text-blue-700 transition-all duration-300"
+                >
+
+                  <FaArrowRight className="text-sm group-hover:translate-x-1 transition-all duration-300" />
+
                   Contact
-                </a>
+
+                </Link>
+
               </li>
 
             </ul>
@@ -124,13 +181,21 @@ const Footer = () => {
 
             <ul className="mt-6 space-y-4 text-gray-600">
 
-              <li>Education Websites</li>
+              <li className="hover:text-blue-700 transition-all duration-300 cursor-pointer">
+                Education Websites
+              </li>
 
-              <li>Admission & Student CRM</li>
+              <li className="hover:text-blue-700 transition-all duration-300 cursor-pointer">
+                Admission & Student CRM
+              </li>
 
-              <li>Website Design & Development</li>
+              <li className="hover:text-blue-700 transition-all duration-300 cursor-pointer">
+                Website Design & Development
+              </li>
 
-              <li>IT Consulting & Support</li>
+              <li className="hover:text-blue-700 transition-all duration-300 cursor-pointer">
+                IT Consulting & Support
+              </li>
 
             </ul>
 
@@ -145,21 +210,56 @@ const Footer = () => {
 
             <div className="w-20 h-1 bg-blue-800 rounded-full mt-3"></div>
 
-            <div className="mt-6 space-y-5 text-gray-600 leading-relaxed">
+            <div className="mt-6 space-y-6 text-gray-600 leading-relaxed">
 
-              <p>
-                OD-HND-AMA-90D-011,
-                Hindol NAC, Dhenkanal,
-                Odisha, 759022
-              </p>
+              {/* Address */}
+              <div className="flex items-start gap-4">
 
-              <p>
-                support@pratibhait.com
-              </p>
+                <div className="w-11 h-11 rounded-full bg-blue-100 flex items-center justify-center text-blue-700">
 
-              <p>
-                +91 7684839593
-              </p>
+                  <FaMapMarkerAlt />
+
+                </div>
+
+                <p>
+
+                  OD-HND-AMA-90D-011,
+                  Hindol NAC, Dhenkanal,
+                  Odisha, 759022
+
+                </p>
+
+              </div>
+
+              {/* Email */}
+              <div className="flex items-center gap-4">
+
+                <div className="w-11 h-11 rounded-full bg-blue-100 flex items-center justify-center text-blue-700">
+
+                  <FaEnvelope />
+
+                </div>
+
+                <p>
+                  support@pratibhait.com
+                </p>
+
+              </div>
+
+              {/* Phone */}
+              <div className="flex items-center gap-4">
+
+                <div className="w-11 h-11 rounded-full bg-blue-100 flex items-center justify-center text-blue-700">
+
+                  <FaPhoneAlt />
+
+                </div>
+
+                <p>
+                  +91 7684839593
+                </p>
+
+              </div>
 
             </div>
 
