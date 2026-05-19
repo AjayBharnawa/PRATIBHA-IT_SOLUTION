@@ -33,7 +33,7 @@ const Navbar = () => {
 
       ${
         scrolled
-          ? 'top-5 w-[85%] rounded-2xl bg-white/80 backdrop-blur-xl shadow-2xl py-4'
+          ? 'top-5 w-[87%] rounded-2xl bg-white/80 backdrop-blur-xl shadow-2xl py-4'
           : 'top-0 w-full bg-white py-5'
       }
 
