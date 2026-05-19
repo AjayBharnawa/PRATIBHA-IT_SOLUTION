@@ -73,7 +73,7 @@ const Navbar = () => {
 
         </Link>
 
-        {/* Menu */}
+        {/* Menu   */}
         <div className='flex-1 flex justify-center items-center text-gray-700 sm:text-sm gap-7'>
 
           <Link
