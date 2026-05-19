@@ -1,32 +1,79 @@
-<<<<<<< HEAD
-# React + Vite
+# Pratibha IT Solutions
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Modern Educational IT Solutions Website built using React, Vite & Tailwind CSS.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+# 🚀 Project Overview
 
-## React Compiler
+Pratibha IT Solutions is a modern responsive multi-page website designed for educational institutions.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The platform provides information about:
 
-## Expanding the ESLint configuration
+- Education Websites
+- Student CRM & ERP
+- Online Examination Systems
+- Automation Solutions
+- IT Consulting Services
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# PRATIBHA-IT_SOLUTION
-A web application using MERN stack 
->>>>>>> 0282117260d558d52fa2cb79c18977643315930f
+The project is built with scalable frontend architecture using reusable React components and modern UI/UX principles.
 
+---
 
-Framer Motion animations
-Dark mode
-Scroll reveal animations
-Real contact form
-Backend integration
-Smooth scrolling
-Loading screen
-Cursor glow effect
-GSAP animations
+# 🛠 Tech Stack
+
+## Frontend
+- React.js
+- Vite
+- Tailwind CSS
+- React Router DOM
+- Lucide React
+- React Icons
+
+---
+
+# 📁 Folder Structure
+
+```bash
+src/
+│
+├── assets/
+│   ├── images/
+│   ├── videos/
+│   └── icons/
+│
+├── components/
+│   ├── Navbar.jsx
+│   ├── Footer.jsx
+│   ├── Hero.jsx
+│   ├── About.jsx
+│   ├── Services.jsx
+│   ├── WhyUs.jsx
+│   ├── Process.jsx
+│   ├── ContactSection.jsx
+│   ├── ScrollToTop.jsx
+│   └── FloatingWhatsapp.jsx
+│
+├── pages/
+│   ├── Home.jsx
+│   ├── AboutPage.jsx
+│   ├── ServicesPage.jsx
+│   ├── WhyUsPage.jsx
+│   ├── ContactPage.jsx
+│   └── NotFound.jsx
+│
+├── layouts/
+│   └── MainLayout.jsx
+│
+├── routes/
+│   └── AppRoutes.jsx
+│
+├── styles/
+│   └── global.css
+│
+├── utils/
+│   └── constants.js
+│
+├── App.jsx
+├── main.jsx
+└── index.css
