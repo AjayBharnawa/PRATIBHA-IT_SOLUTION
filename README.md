@@ -1,4 +1,4 @@
-# Pratibha IT Solutions
+# Pratibha IT Solution
 
 Modern Educational IT Solutions Website built using React, Vite & Tailwind CSS.
 
