@@ -117,7 +117,6 @@ const Process = () => {
 
         </div>
 
-        {/* CARD 4 */}
         <div className="group relative bg-white rounded-3xl p-8 overflow-hidden shadow-xl transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_20px_60px_rgba(147,51,234,0.18)]">
 
           <div className="absolute -top-16 -right-16 w-40 h-40 bg-purple-200 rounded-full blur-3xl opacity-40 group-hover:scale-150 transition-all duration-700"></div>
