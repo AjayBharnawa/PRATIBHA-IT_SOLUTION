@@ -1,4 +1,5 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 import {
   Globe,
@@ -18,6 +19,7 @@ import {
 } from 'lucide-react'
 
 const ServicesPage = () => {
+  const navigate = useNavigate()
 
   const services = [
     {
@@ -330,12 +332,12 @@ const ServicesPage = () => {
 
             </p>
 
-            <button className="mt-10 bg-white text-blue-900 px-8 py-4 rounded-full font-bold text-lg hover:scale-105 hover:bg-blue-50 transition-all duration-500 shadow-xl">
-
-              Contact Pratibha IT Solution
-
+            <button onClick={() => navigate('/contact')}
+                className="mt-10 bg-white text-blue-900 px-8 py-4 rounded-full font-bold text-lg hover:scale-105 hover:bg-blue-50 transition-all duration-500 shadow-xl"
+                >
+                  Contact Pratibha IT Solution
             </button>
-
+            
           </div>
 
         </div>
