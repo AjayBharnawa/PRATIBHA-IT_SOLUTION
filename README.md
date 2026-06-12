@@ -4,7 +4,7 @@ Modern Educational IT Solutions Website built using React, Vite & Tailwind CSS.
 
 ---
 
-# 🚀 Project Overview
+# Project Overview
 
 Pratibha IT Solutions is a modern responsive multi-page website designed for educational institutions.
 
